@@ -1,0 +1,31 @@
+<!-- Start Header -->
+<header  id="header_id">
+  <!-- div.jumbotron.text-white>div.container>div.text-center.p-5>h1.text-uppercase.shadow{Angular Eğitimine Hoşgeldiniz}+h4{Frontend, Angular, Javascript}+a.btn.btn-primary{Linkedin}+a.btn.btn-danger{Github}+a.btn.btn-secondary{GitHub} -->
+  <div class="jumbotron text-white text-shadow">
+    <div class="container">
+      <div class="text-center p-5">
+        <h1 class="text shadow">{{ header }}</h1>
+        <h4 class="text-capitalize shadow">
+          {{ title }}
+        </h4>
+        <div id="header_social" class="mt-4 mb-3">
+          <span *ngFor="let temp of socialContent">
+            <a [href]="temp.link" [class]="temp.classSocial"
+              ><i [class]="temp.icon"></i
+            ></a>
+          </span>
+        </div>
+      </div>
+    </div> <!-- container -->
+  </div><!-- jumbotron -->
+</header>
+<!-- Start Header -->
+
+<!-- Back To Top -->
+<a
+  id="back_to_top_id"
+  href="#header_id"
+  class="back-to-top rounded-2 d-flex align-items-center justify-content-center"
+>
+  ^^
+</a>
