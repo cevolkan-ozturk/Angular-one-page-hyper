@@ -10,6 +10,7 @@ import { RouterLink } from '@angular/router';
 // BlogCard Ekledim
 import { BlogCard } from './BlogCard';
 import { OnePageContent } from './OnePageContent';
+import { AboutComponent } from './about/about.component';
 
 @Component({
   // Html Selector Template
@@ -19,7 +20,7 @@ import { OnePageContent } from './OnePageContent';
   standalone: true,
 
   // import modülümüz
-  imports: [CommonModule, RouterLink],
+  imports: [AboutComponent,CommonModule, RouterLink],
 
   // Html Url
   templateUrl: './onepage-main.component.html',
@@ -32,9 +33,10 @@ export class OnepageMainComponent {
   onePageContent: OnePageContent[] = [
     { id: 1, title: 'EDUCATION' },
     { id: 2, title: 'SKILLS' },
-    { id: 3, title: 'EXPERINCE' },
+    { id: 3, title: 'BLOG' },
     { id: 4, title: 'CONTACT' },
   ];
+
 
   // 1.YOL
   // blogCard: any[] = [
@@ -115,6 +117,7 @@ export class OnepageMainComponent {
       categoryName:"backend"
     },
   ];
+
 
   //Constructor
   constructor() {}
