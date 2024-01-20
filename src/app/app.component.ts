@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser';
+import AOS from 'aos';
 
 // Header, Main, Footer
-import { OnepageHeaderComponent } from './onepage-header/onepage-header.component';
 import { OnepageMainComponent } from './onepage-main/onepage-main.component';
-import { OnepageFooterComponent } from './onepage-footer/onepage-footer.component';
-import { OnepageProjectNameComponent } from './onepage-project-name/onepage-project-name.component';
 import { OnePageNavbarComponent } from './one-page-navbar/one-page-navbar.component';
 
 // Dikkat: Bütün Componentleri buraya eklemek zorundayız
@@ -21,11 +20,8 @@ import { OnePageNavbarComponent } from './one-page-navbar/one-page-navbar.compon
   imports: [
     CommonModule, 
     RouterOutlet, 
-    OnepageProjectNameComponent,
-    OnepageHeaderComponent, 
-    OnepageMainComponent, 
-    OnepageFooterComponent,
     OnePageNavbarComponent,
+    OnepageMainComponent
   ],
 
   // Html'de bu componentte kullanacağımız html dosyası
@@ -37,9 +33,28 @@ import { OnePageNavbarComponent } from './one-page-navbar/one-page-navbar.compon
 })
 
 // EXPORT: bu classı dışarda çağırmak istiyorsak
-export class AppComponent {
-  // TS(TypeScript kodlarını buraya yazabiliriz)
-  name="Hamit";
-  surname="Mızrak";
-  projectName = 'One Page';
+export class AppComponent implements OnInit {
+  constructor (private titleService: Title, private metaService: Meta) {
+    this.titleService.setTitle('Volkan ÖZTÜRK | Frontend Developer');
+    this.metaService.addTags([
+      {name: 'keywords', content: 'fronted, software, developer, angular'},
+      {
+        name : 'description',
+        content: 'Merhablar! Ben Volkan bla bla bla'
+      },
+    ]);
+   
+    
+  }
+  
+  toggleNavbar(event: Event) {
+    event.preventDefault();
+    document.querySelector('body')?.classList.toggle('nav-active');
+  }
+
+  ngOnInit(): void {
+    AOS.init({
+      duration: 1200,
+    });
+  }
 }

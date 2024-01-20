@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OnePageBlogPageComponent } from './one-page-blog-page.component';
+import { EducationComponent } from './education.component';
 
-describe('OnePageBlogPageComponent', () => {
-  let component: OnePageBlogPageComponent;
-  let fixture: ComponentFixture<OnePageBlogPageComponent>;
+describe('EducationComponent', () => {
+  let component: EducationComponent;
+  let fixture: ComponentFixture<EducationComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OnePageBlogPageComponent]
+      imports: [EducationComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(OnePageBlogPageComponent);
+    fixture = TestBed.createComponent(EducationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

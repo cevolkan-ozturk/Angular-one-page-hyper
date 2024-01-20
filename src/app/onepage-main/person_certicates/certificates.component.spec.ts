@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OnePageRegisterComponent } from './one-page-register.component';
+import { CertificatesComponent } from './certificates.component';
 
-describe('OnePageRegisterComponent', () => {
-  let component: OnePageRegisterComponent;
-  let fixture: ComponentFixture<OnePageRegisterComponent>;
+describe('CertificatesComponent', () => {
+  let component: CertificatesComponent;
+  let fixture: ComponentFixture<CertificatesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OnePageRegisterComponent]
+      imports: [CertificatesComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(OnePageRegisterComponent);
+    fixture = TestBed.createComponent(CertificatesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
