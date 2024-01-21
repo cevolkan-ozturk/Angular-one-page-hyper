@@ -102,3 +102,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     background-color: rgb(134, 27, 228);
     height: 100rem;
 }
+
+.section-heading h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e5ebf2;
+}

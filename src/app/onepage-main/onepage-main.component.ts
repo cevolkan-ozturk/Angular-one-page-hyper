@@ -16,6 +16,16 @@ import { AboutComponent } from './about/about.component';
 // Education
 import { EducationComponent } from './education/education.component';
 
+// Skills
+import { SkillsComponent } from './skills/skills.component';  
+
+// Experince
+import { ExperienceComponent } from './experience/experience.component'; 
+
+// Contact
+import { ContactComponent } from './contact/contact.component';
+
+
 @Component({
   // Html Selector Template
   selector: 'app-onepage-main',
@@ -27,7 +37,10 @@ import { EducationComponent } from './education/education.component';
   imports: [CommonModule, 
     RouterLink,
     AboutComponent,
-    EducationComponent],
+    EducationComponent,
+    SkillsComponent,
+    ExperienceComponent,
+    ContactComponent],
 
   // Html Url
   templateUrl: './onepage-main.component.html',
