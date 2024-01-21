@@ -10,6 +10,12 @@ import { RouterLink } from '@angular/router';
 // BlogCard Ekledim
 import { OnePageContent } from './OnePageContent';
 
+// About
+import { AboutComponent } from './about/about.component'; 
+
+// Education
+import { EducationComponent } from './education/education.component';
+
 @Component({
   // Html Selector Template
   selector: 'app-onepage-main',
@@ -18,7 +24,10 @@ import { OnePageContent } from './OnePageContent';
   standalone: true,
 
   // import modülümüz
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, 
+    RouterLink,
+    AboutComponent,
+    EducationComponent],
 
   // Html Url
   templateUrl: './onepage-main.component.html',
@@ -33,6 +42,7 @@ export class OnepageMainComponent {
     { id: 2, title: 'SKILLS' },
     { id: 3, title: 'BLOG' },
     { id: 4, title: 'CONTACT' },
+    { id: 5, title: 'CERTIFICATES'}
   ];
 
 
