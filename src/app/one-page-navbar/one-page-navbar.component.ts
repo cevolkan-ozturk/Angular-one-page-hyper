@@ -1,5 +1,4 @@
 // User
-import { User, userRolles } from './User';
 
 // Common Module
 import { CommonModule } from '@angular/common';
@@ -35,41 +34,41 @@ export class OnePageNavbarComponent {
   // homePage: String = 'Anasayfa 44';
 
   // User Object
-  User: User[] = [
-    {
-      id: 1,
-      username: 'Hamit Mizrak',
-      email: 'hamitmizrak@gmail.com',
-      password: '123456',
-      pictures:
-        'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
-      date: String(new Date().getFullYear()),
-      link: 'https://admin1/',
-      rolles: userRolles.admin,
-    },
-    {
-      id: 2,
-      username: 'writer1',
-      email: 'writer1@gmail.com',
-      password: '123456',
-      pictures:
-        'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
-      date: String(new Date().getFullYear()),
-      link: 'https://writer1/',
-      rolles: userRolles.writer,
-    },
-    {
-      id: 3,
-      username: 'user1',
-      email: 'huser1@gmail.com',
-      password: '123456',
-      pictures:
-        'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
-      date: String(new Date().getFullYear()),
-      link: 'https://user1/',
-      rolles: userRolles.user,
-    },
-  ];
+  // User: User[] = [
+  //   {
+  //     id: 1,
+  //     username: 'Hamit Mizrak',
+  //     email: 'hamitmizrak@gmail.com',
+  //     password: '123456',
+  //     pictures:
+  //       'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
+  //     date: String(new Date().getFullYear()),
+  //     link: 'https://admin1/',
+  //     rolles: userRolles.admin,
+  //   },
+  //   {
+  //     id: 2,
+  //     username: 'writer1',
+  //     email: 'writer1@gmail.com',
+  //     password: '123456',
+  //     pictures:
+  //       'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
+  //     date: String(new Date().getFullYear()),
+  //     link: 'https://writer1/',
+  //     rolles: userRolles.writer,
+  //   },
+  //   {
+  //     id: 3,
+  //     username: 'user1',
+  //     email: 'huser1@gmail.com',
+  //     password: '123456',
+  //     pictures:
+  //       'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
+  //     date: String(new Date().getFullYear()),
+  //     link: 'https://user1/',
+  //     rolles: userRolles.user,
+  //   },
+  // ];
 
   // navBar adında bir obje oluşturunuz.
   // navBar:{}={};
@@ -100,6 +99,7 @@ export class OnePageNavbarComponent {
       logoLink: '/',
       logoTitle: 'Title',
     },
+
     //Anasayfa,AboutMe,Blog,Contact  name: Anasayfa, link: http://, fontAwesome
     navbar: [
       {

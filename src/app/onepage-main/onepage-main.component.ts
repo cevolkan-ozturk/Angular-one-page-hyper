@@ -10,6 +10,9 @@ import { RouterLink } from '@angular/router';
 // BlogCard Ekledim
 import { OnePageContent } from './OnePageContent';
 
+// Navbar
+import { OnePageNavbarComponent } from '../one-page-navbar/one-page-navbar.component';
+
 // About
 import { AboutComponent } from './about/about.component'; 
 
@@ -26,6 +29,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
 
 
+
 @Component({
   // Html Selector Template
   selector: 'app-onepage-main',
@@ -40,7 +44,8 @@ import { ContactComponent } from './contact/contact.component';
     EducationComponent,
     SkillsComponent,
     ExperienceComponent,
-    ContactComponent],
+    ContactComponent,
+    OnePageNavbarComponent],
 
   // Html Url
   templateUrl: './onepage-main.component.html',
@@ -51,8 +56,8 @@ import { ContactComponent } from './contact/contact.component';
 export class OnepageMainComponent {
   // Field
   onePageContent: OnePageContent[] = [
-    { id: 1, title: 'EDUCATION' },
-    { id: 2, title: 'SKILLS' },
+    { id: 1, title: 'Education' },
+    { id: 2, title: 'Skills' },
     { id: 3, title: 'BLOG' },
     { id: 4, title: 'CONTACT' },
     { id: 5, title: 'CERTIFICATES'}
