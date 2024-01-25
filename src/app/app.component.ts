@@ -7,6 +7,7 @@ import AOS from 'aos';
 // Header, Main, Footer
 import { OnepageMainComponent } from './onepage-main/onepage-main.component';
 import { OnePageNavbarComponent } from './one-page-navbar/one-page-navbar.component';
+import { OnepageHeaderComponent } from './onepage-header/onepage-header.component';
 
 // Dikkat: Bütün Componentleri buraya eklemek zorundayız
 @Component({
@@ -21,7 +22,9 @@ import { OnePageNavbarComponent } from './one-page-navbar/one-page-navbar.compon
     CommonModule, 
     RouterOutlet, 
     OnePageNavbarComponent,
-    OnepageMainComponent
+    OnepageMainComponent,
+    OnepageHeaderComponent
+    
   ],
 
   // Html'de bu componentte kullanacağımız html dosyası
