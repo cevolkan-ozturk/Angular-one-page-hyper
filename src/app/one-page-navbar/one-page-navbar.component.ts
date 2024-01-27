@@ -111,7 +111,7 @@ export class OnePageNavbarComponent {
       { id: 2, name: 'Education', link: '#education', fontAwesome: 'font-2' },
       { id: 3, name: 'Skills', link: '#skills', fontAwesome: 'font-2' },
       { id: 4, name: 'Experience', link: '#experience', fontAwesome: 'font-3' },
-      { id: 5, name: 'My Projects', link: '#my-project', fontAwesome:'font-4' },
+      { id: 5, name: 'My Projects', link: '#my_project', fontAwesome:'font-4' },
       { id: 6, name: 'Contact', link: '#contact', fontAwesome: 'font-5' },
     ],
     search: {

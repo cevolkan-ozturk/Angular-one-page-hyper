@@ -131,3 +131,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*.timeline-horizontal-border*/
 
 /*.education-horizontal-timeline*/
+
+ul {
+    list-style-type: none;
+}

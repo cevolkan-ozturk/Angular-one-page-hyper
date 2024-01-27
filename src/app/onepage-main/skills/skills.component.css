@@ -20,7 +20,7 @@
 }
 .single-progress-txt h3 {
     width: 10%;
-    color: #a606c3;
+    color: #1c69dd;
     position: relative;
     top: 6px;
     left: 20px;
@@ -34,13 +34,13 @@
     border-radius:3px;
     overflow: visible;
     background: #e6ecf3;
-    height:8px;
+    height:11px;
     margin-top: 15px;
     width: 85%;
     margin-bottom: 37px;
 }
 .progress-bar {
-   background: #b636ff;
+   background: #1c69dd;
     border-radius: 3px;
    -webkit-transition: width 1.5s ease-in-out;
    -ms-transition: width 1.5s ease-in-out;
@@ -55,7 +55,7 @@
 .tooltip > .tooltip-inner {
    background-color: transparent;
    padding: 1px 5px;
-   color: #b636ff;
+   color: #1c69dd;
    font-weight: 500;
    font-size: 12px;
    border-radius: 0;
