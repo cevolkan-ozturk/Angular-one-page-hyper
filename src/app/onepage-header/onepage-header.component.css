@@ -1,6 +1,6 @@
 #header_id{
     margin-top: 3.5rem;
-    background-image: url('../../assets/image/welcome-banner.jpg');
+    background-image: url('../../assets/image/premium_photo-1683309565422-77818a287060.jpg');
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -11,8 +11,8 @@
 #header_social a i{
     font-size: 1rem;
 }
-
-#back_to_top_id{
+ 
+ #back_to_top_id{
     position: fixed;
     right: 20px;
     bottom:20px;
@@ -51,6 +51,5 @@
   #back_to_top_id.show {
     opacity: 1;
     visibility: visible;
-  } 
-  
-
+  }  
+   

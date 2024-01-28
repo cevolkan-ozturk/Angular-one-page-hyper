@@ -1,6 +1,6 @@
 
 /*-------------------------------------
-        9. Portfolio
+        My Project
 --------------------------------------*/
 .portfolio {
     padding:  50px 0 100px;
@@ -74,3 +74,7 @@
     transform:scale(1);
     top:0;
 }/*.isotope-overlay*/
+
+.col-sm-5 {
+    margin-top: 20px;
+}
