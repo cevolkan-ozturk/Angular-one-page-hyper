@@ -30,8 +30,8 @@
     height:50px;
     text-transform:capitalize;
     margin-top: 3px;
-    background: #b636ff;
-    border: 1px solid #b636ff;
+    background: #1c69dd;
+    border: 1px solid #1c69dd;
     cursor:pointer;
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
      -webkit-transition: .5s; 
@@ -108,7 +108,7 @@
     transition: .3s;
 }
 .hm-foot-icon ul li>a:hover{
-    color: #b636ff;
+    color: #1c69dd;
 }/*hm-foot-icon*/
 
 .hm-footer-copyright p{

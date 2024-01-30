@@ -1,6 +1,8 @@
 #header_id{
     margin-top: 3.5rem;
-    background-image: url('../../assets/image/premium_photo-1683309565422-77818a287060.jpg');
+    /*background-image: url('../../assets/image/premium_photo-1683309565422-77818a287060.jpg');
+    */
+    background-image: url('../../assets/image/business-5475661_1280.jpg');
     background-size: cover;
     background-position: center;
     height: 70vh;
