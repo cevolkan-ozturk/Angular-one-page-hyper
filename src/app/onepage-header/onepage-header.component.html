@@ -10,11 +10,11 @@
             {{ title }}
           </h4>
             <div class="dowland-cv-btn">
-              <a class="dowland-btn" href="../../assets/Volkan_ÖZTÜRK.pdf" role="button">Downlad Resume</a>
+              <a class="dowland-btn" target="_blank" href="../../assets/Volkan_ÖZTÜRK.pdf" role="button">Downlad Resume</a>
             </div><!--/.single-single-contact-btn-->
           <div id="header_social" class="mt-4 mb-3">
             <span *ngFor="let temp of socialContent">
-              <a [href]="temp.link" [class]="temp.classSocial"
+              <a [href]="temp.link" target="_blank" [class]="temp.classSocial"
                 ><i [class]="temp.icon"></i
               ></a>
             </span>
